@@ -1,0 +1,58 @@
+===============================================
+  HOW TO BUILD THE STANDALONE EXECUTABLE
+===============================================
+
+PREREQUISITES:
+1. Python 3.7+ installed
+2. Internet connection
+
+STEPS TO BUILD:
+
+1. Open Command Prompt or PowerShell
+
+2. Navigate to this folder:
+   cd d:\dev\pctrouble
+
+3. Install dependencies:
+   pip install psutil pyinstaller
+
+4. Build the executable:
+   pyinstaller --onefile --windowed --name "BF6CrashMonitor" --clean crash_monitor.py
+
+5. Find the executable in:
+   dist\BF6CrashMonitor.exe
+
+ALTERNATIVE (Easier):
+
+Just run: build.bat
+
+It will automatically:
+- Check for dependencies
+- Install if missing
+- Build the executable
+- Show you where it is
+
+===============================================
+SENDING TO YOUR FRIEND:
+===============================================
+
+Send these files:
+1. dist\BF6CrashMonitor.exe - The main program
+2. QUICK_START.txt - Instructions for your friend
+
+Your friend only needs the .exe file!
+No Python installation required on their end.
+
+===============================================
+IF YOU DON'T WANT TO BUILD:
+===============================================
+
+Your friend can install Python and run directly:
+
+1. Install Python from python.org
+2. Open Command Prompt
+3. Navigate to the folder
+4. Run: pip install psutil
+5. Run: python bf6_crash_monitor_gui.py
+
+===============================================
